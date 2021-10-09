@@ -1,0 +1,6 @@
+.checkout{
+    display:flex;
+    height:max-content;
+    background-color:  #dadada;
+    padding:20px;
+}
