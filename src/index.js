@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {StateProvider} from "./StateProvider";
-//import reducer, {initialState} from
+import reducer, {initialState} from './reducer';
 
 ReactDOM.render(
   <React.StrictMode>
