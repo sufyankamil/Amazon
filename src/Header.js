@@ -8,7 +8,7 @@ function Header() {
     return (
         <div className="header">
             <Link to="/">
-                <img className="header__logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt=" Failed " />
+                <img className="header__logo" src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt=" Failed " />
             </Link>
             <div className="header__nav">
                 <div className="location">
