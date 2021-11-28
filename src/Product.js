@@ -16,7 +16,7 @@ function Product({ id, title, price, image }) {
 
             </div>
 
-            <button className="product--button">Add to Cart</button>
+            <button className="product--button" onClick = {addToCart} >Add to Cart</button>
         </div>
     );
 }
