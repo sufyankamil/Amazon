@@ -11,6 +11,13 @@ function Login() {
 
   const signIn = (e) => {
     e.preventDefault();
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((auth) => {
+        // successfull login redirect to homepage
+        history.push("/");
+      })
+      .catch((error) => alert(error.message));
   };
 
   const register = (e) => {
@@ -18,8 +25,10 @@ function Login() {
     auth
         .createUserWithEmailAndPassword(email, password)
         .then((auth) => {
-          console.log(auth);
           // success created new user with email and password
+          if (auth) {
+            history.push("/");
+          }
         })
         .catch((error) => alert(error.message));
   };
